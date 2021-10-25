@@ -45,7 +45,6 @@ export default class {
     </html>`;
     try {
       await sendMail.send(msg);
-      console.log("email sent");
     } catch (err) {
       return err;
     }
