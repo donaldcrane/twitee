@@ -3,9 +3,6 @@ import cors from "cors";
 import cookieSession from "cookie-session";
 import config from "./config";
 import router from "./routes/index";
-import GenericError from "./utils/errors/base";
-
-// import errorClasses from "./utils/errors/base";
 
 const app = express();
 
