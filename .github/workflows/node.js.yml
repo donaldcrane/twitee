@@ -53,6 +53,11 @@ jobs:
           CI: true
           JWT_KEY: ${{ secrets.JWT_KEY }}
           COOKIE_KEY: ${{ secrets.COOKIE_KEY }}
+          PORT: ${{ secrets.PORT }}
+          DEV_DATABASE_URL: ${{ secrets.DEV_DATABASE_URL }}
+          SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
+          SENDGRID_Email: ${{ secrets.SENDGRID_Email }}
+          APP_NAME: ${{ secrets.APP_NAME }}
       - name: Coveralls
         uses: coverallsapp/github-action@master
         env:
